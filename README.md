@@ -4,8 +4,31 @@ permpy
 ## A Python Permutations Class
 
 Contains Various tools for working interactively with permutaions. 
-Easily extensible.
+Easily extensible. 
 
+
+Installation
+------------
+
+Python 3 not yet supported.
+The easiest way is to install is to use 
+
+    git clone https://github.com/cheyneh/permpy.git
+
+This will copy the package into the current directory. 
+If you don't have a git client, you can download the package 
+as a zip file from 
+[here](http://github.com/cheyneh/permpy/zipball/master/).
+
+Then just use 
+
+    import permpy
+
+or
+
+    from permpy import *
+    
+    
 ### Examples:
 ```python
 >>>
@@ -55,5 +78,13 @@ Easily extensible.
  Set of 40320 permutations]
 >>> 
 >>> 
->>> 
+>>> p = Perm.random(12)
+>>> p
+ 3 6 11 12 7 9 4 8 10 2 1 5 
+>>>
+>>> q = Perm([ 1324 ])
+>>>
+>>> p.avoids(q)
+ False
+>>>
 ```
